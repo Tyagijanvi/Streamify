@@ -20,6 +20,7 @@ const App = () => {
   const { isLoading, authUser } = useAuthUser();
   const { theme} = useThemeStore();
 
+  
   const isAuthenticated = Boolean(authUser);
   const isOnboarded = authUser?.isOnboarded;
 
@@ -28,7 +29,8 @@ const App = () => {
   //.log({isLoading});
   //console.log({error});
   return (
-    <div className="h-screen" data-theme={theme}>
+  <div className="min-h-screen bg-[#0f0a1c] text-white" data-theme={theme}>
+
    
    
      <Routes>
